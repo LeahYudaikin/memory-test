@@ -1,4 +1,4 @@
-Read this in Hebrew
+[Read this in Hebrew](README_HE.md)
 
 # 🎴 Disney Memory Game
 
@@ -41,4 +41,4 @@ Challenge yourself with three difficulty levels, relaxing background music, soun
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/your-username/your-repo-name.git
+git clone https://github.com/LeahYudaikin/memory-test.git
