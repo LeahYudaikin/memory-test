@@ -6,7 +6,7 @@ Welcome to a magical memory game inspired by your favorite Disney characters!
 Challenge yourself with three difficulty levels, relaxing background music, sound effects, and a race against the clock ⏱️
 
 🌟 **Play now:**  
-[Click here to open the game](https://leahyudaikin.github.io/memory-test/)  
+[👇](https://leahyudaikin.github.io/memory-test/)  
 
 ---
 
