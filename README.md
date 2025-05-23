@@ -1,4 +1,4 @@
-> 📄 [לקרוא את הקובץ הזה בעברית](#עברית)
+Read this in Hebrew
 
 # 🎴 Disney Memory Game
 
@@ -7,16 +7,6 @@ Challenge yourself with three difficulty levels, relaxing background music, soun
 
 🌟 **Play now:**  
 [Click here to open the game](https://leahyudaikin.github.io/memory-test/)  
-
----
-
-## 📋 Table of Contents
-
-- [Features](#features)
-- [How to Play](#how-to-play)
-- [Technologies Used](#technologies-used)
-- [Run Locally](#run-locally)
-- [Credits](#credits)
 
 ---
 
