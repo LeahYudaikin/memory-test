@@ -1,6 +1,6 @@
 <div dir="rtl">
 
-[קראו באנגלית]((README.md))
+[קראו באנגלית](README.md)
 
 # 🎴 משחק הזיכרון של דיסני
 
