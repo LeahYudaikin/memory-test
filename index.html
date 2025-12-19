@@ -1,64 +1,30 @@
 <!DOCTYPE html>
-<html lang="he">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>בדיקת סעיפים לא תקינים</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>memory game</title>
+    <link rel="stylesheet" href="./css.css">
 </head>
 <body>
-  <h2>בדיקת סעיפים לא תקינים</h2>
-  <input type="file" id="fileInput" accept=".txt">
-  <pre id="output"></pre>
-
-  <script>
-    // פונקציה לנקות את האפסים המובילים
-    function normalizeSection(section) {
-      return section.replace(/^0+/g, '');
-    }
-
-    // פונקציה לבדוק אם הסעיף תקין
-    function isSectionValid(section) {
-      const first10 = section.slice(0, 10);
-      return !/\s/.test(first10); // לא תקין אם יש רווחים
-    }
-
-    // פונקציה לחלץ את הסעיפים מהטקסט
-    function extractSections(text) {
-      const sections = [];
-      // regex למציאת רצפי ספרות ארוכים שמתחילים סעיף
-      const regex = /\d{16,}\.\d+\.\d+/g;
-      let match;
-      while ((match = regex.exec(text)) !== null) {
-        const raw = match[0];
-        const part1 = raw.slice(0, 2);
-        const part2 = raw.slice(2, 4);
-        const part3 = raw.slice(4, 6);
-        const part4 = raw.slice(6, 10);
-        const formatted = `${part1}.${part2}.${part3}.${part4}`;
-        sections.push({ raw, formatted });
-      }
-      return sections;
-    }
-
-    document.getElementById('fileInput').addEventListener('change', function(event) {
-      const file = event.target.files[0];
-      if (!file) return;
-
-      const reader = new FileReader();
-      reader.onload = function(e) {
-        const text = e.target.result;
-
-        const sections = extractSections(text);
-        const invalidSections = sections
-          .filter(s => !isSectionValid(s.raw))
-          .map(s => s.formatted);
-
-        document.getElementById('output').textContent =
-          invalidSections.length > 0 
-          ? 'סעיפים לא תקינים:\n' + invalidSections.join('\n')
-          : 'כל הסעיפים תקינים.';
-      };
-      reader.readAsText(file, 'UTF-8');
-    });
-  </script>
+    <header id="header"><b>-DISNEY-</b></header>
+    <nav id="nav">
+            <button id="button3" onclick="hard()">קשה</button>
+            <button id="button2" onclick="midy()">בינוני</button>
+            <button id="button1" onclick="easy()">קל</button>
+    </nav>
+    <main id="main">
+            <h2>משחק זיכרון</h2>
+            ,במשחק זה באפשרותכם לבחור את הרמה הרצוייה
+            <br>
+            .מטרת המשחק היא להתאים בין הזוגות בזמן המהיר ביותר
+            <h3>!!!בהצלחה</h3>
+    </main>
+    <footer id="footer">כל הזכויות שמורות©</footer>
+    <audio id="audio" src="bensound-creativeminds.mp3"></audio>
+    <audio id="victory-audio" src="466133__humanoide9000__victory-fanfare.wav"></audio>
 </body>
+<script src="./js.js"></script>
 </html>
+הקטנת את תצוגת הפריט.
